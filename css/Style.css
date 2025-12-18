@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: green;
+}
+
+.navergationman ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navergationman li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navergationman ul li a:hover {
+  background-color: #111111;
+}
+
+.border {
+    border: 2px solid black;
+    min-height: 200px;
+    max-width: 100px;
+}
+
+.thundersneeze {
+    min-width: 260px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.thundersneeze img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.textimizer {
+    font-size: 14px;
+    color: honeydew;
+}
