@@ -1,7 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: green;
+    background-color: #89986D;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+a:visited {
+  color: inherit;
 }
 
 .navergationman ul{
@@ -33,12 +42,20 @@ body {
     max-width: 100px;
 }
 
+.RainyCloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .thundersneeze {
     min-width: 260px;
+    max-width: 500px;
     padding: 20px;
-    border: 2px solid #ccc;
     border-radius: 16px;
+    background-color: #F6F0D7;
     text-align: center;
+    margin-top: 20px;
 }
 
 .thundersneeze img {
@@ -47,9 +64,82 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 12px;
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.thundersneeze img:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      transform: translateY(-4px);
 }
 
 .textimizer {
     font-size: 14px;
-    color: honeydew;
+}
+
+.experience-section {
+    display: flex;
+    gap: 24px;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1100px;
+}
+
+.column {
+    flex: 1;
+    background-color: #F6F0D7;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.column h2 {
+    margin-top: 0;
+    color: #89986D;
+    border-bottom: 2px solid #C5D89D;
+    padding-bottom: 8px;
+}
+
+.EternalDamnation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.EternalDamnation li {
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 4px solid #9CAB84;
+}
+
+.EternalDamnation h3 {
+    margin: 0;
+    color: #333;
+}
+
+.org {
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+.period {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+.timeline p {
+    margin: 0;
+    font-size: 14px;
+    color: #444;
+}
+
+
+@media (max-width: 575px) {
+    .experience-section {
+        flex-direction: column;
+    }
+    body {
+        max-width: 575px;
+    }
 }
