@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +16,7 @@ a,
 a:visited {
   color: inherit;
 }
-
+/* Navigatie */
 .navergationman ul{
     list-style-type: none;
     margin: 0;
@@ -27,7 +31,7 @@ a:visited {
 
 .navergationman li a {
     display: block;
-    color: white;
+    color: #F6F0D7;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -41,6 +45,9 @@ a:visited {
     min-height: 200px;
     max-width: 100px;
 }
+
+
+/* Player Card */
 
 .RainyCloud {
     display: flex;
@@ -75,6 +82,8 @@ a:visited {
 .textimizer {
     font-size: 14px;
 }
+
+/* Opleidingen en Ervaringen */
 
 .experience-section {
     display: flex;
@@ -134,6 +143,92 @@ a:visited {
     color: #444;
 }
 
+
+/* Talen/Programmeer Kennis */
+
+.knowledge-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #F6F0D7;
+    border-radius: 16px;
+}
+
+.knowledge-section h2 {
+    margin-top: 0;
+    color: #89986D;
+    border-bottom: 2px solid #C5D89D;
+    padding-bottom: 8px;
+}
+
+.knowledge-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.knowledge-table th,
+.knowledge-table td {
+    padding: 10px 12px;
+    border: 1px solid #9CAB84;
+    text-align: left;
+}
+
+.knowledge-table th {
+    background-color: #C5D89D;
+    color: #333;
+}
+
+.knowledge-table tbody tr:nth-child(odd) {
+    background-color: #F6F0D7;
+}
+
+.knowledge-table tbody tr:nth-child(even) {
+    background-color: #E9E3C9;
+}
+
+/* Footer */
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 24px;
+    margin-top: 40px;
+
+    background-color: #333333;
+    color: #F6F0D7;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.back-to-top {
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: #C5D89D;
+    color: #333;
+    font-weight: bold;
+}
+
+.back-to-top:hover {
+    background-color: #9CAB84;
+}
+
+
+/* Mobile Integration */
 
 @media (max-width: 575px) {
     .experience-section {
