@@ -16,6 +16,7 @@ a,
 a:visited {
   color: inherit;
 }
+
 /* Navigatie */
 .navergationman ul{
     list-style-type: none;
@@ -152,6 +153,7 @@ a:visited {
     padding: 20px;
     background-color: #F6F0D7;
     border-radius: 16px;
+    overflow-x: auto;
 }
 
 .knowledge-section h2 {
@@ -227,14 +229,35 @@ a:visited {
     background-color: #9CAB84;
 }
 
-
 /* Mobile Integration */
 
 @media (max-width: 575px) {
+    .navergationman ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navergationman li a {
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    .thundersneeze {
+        max-width: 90%;
+    }
+    
     .experience-section {
         flex-direction: column;
+        padding: 10px;
     }
-    body {
-        max-width: 575px;
+
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .footer-right {
+        text-align: center;
     }
 }
